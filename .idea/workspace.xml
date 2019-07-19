@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5566000a-e445-41a3-b1be-c383c60e7230" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/Primes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/PrimeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/sandbox/out/" />
@@ -40,7 +39,33 @@
     <favorites_list name="sandbox" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/Primes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/PrimeTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#160#161#0" expanded="true" />
+                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,6 +107,8 @@
         <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" />
         <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/tests/ContactDeletionTests.java" />
         <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/tests/ContactModificationTests.java" />
+        <option value="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/PrimeTests.java" />
+        <option value="$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/Primes.java" />
       </list>
     </option>
   </component>
@@ -100,108 +127,54 @@
           <expand>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="addressbook" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="addressbook" type="462c0819:PsiDirectoryNode" />
-              <item name="appmanager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="addressbook" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addressbook-web-test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="addressbook" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.seleniumhq.selenium:selenium-api:3.14.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.seleniumhq.selenium:selenium-api:3.14.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="selenium-api-3.14.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.seleniumhq.selenium:selenium-api:3.14.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="selenium-api-3.14.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.seleniumhq.selenium:selenium-remote-driver:3.14.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.seleniumhq.selenium:selenium-remote-driver:3.14.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="selenium-remote-driver-3.14.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.seleniumhq.selenium:selenium-remote-driver:3.14.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="selenium-remote-driver-3.14.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: org.seleniumhq.selenium:selenium-remote-driver:3.14.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="selenium-remote-driver-3.14.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="selenium" type="462c0819:PsiDirectoryNode" />
-              <item name="remote" type="462c0819:PsiDirectoryNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -237,7 +210,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ContactDeletionTests">
+  <component name="RunManager" selected="TestNG.PrimeTests">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -329,16 +302,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupModificationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-test.test" />
+    <configuration name="PrimeTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.GroupModificationTests" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.PrimeTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
@@ -367,11 +340,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.PrimeTests" />
         <item itemvalue="TestNG.ContactDeletionTests" />
         <item itemvalue="TestNG.ContactModificationTests" />
         <item itemvalue="TestNG.ContactCreationTests" />
         <item itemvalue="TestNG.GroupCreationTests" />
-        <item itemvalue="TestNG.GroupModificationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -389,27 +362,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GroupDeletionTests - 2019.07.15 at 23h 11m 59s.xml">
-      <configuration name="GroupDeletionTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GroupDeletionTests - 2019.07.15 at 23h 13m 42s.xml">
-      <configuration name="GroupDeletionTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GroupModificationTests - 2019.07.15 at 23h 14m 40s.xml">
-      <configuration name="GroupModificationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactCreationTests - 2019.07.17 at 21h 13m 54s.xml">
-      <configuration name="ContactCreationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="GroupCreationTests - 2019.07.17 at 21h 14m 22s.xml">
-      <configuration name="GroupCreationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactCreationTests - 2019.07.17 at 21h 14m 45s.xml">
-      <configuration name="ContactCreationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ContactDeletionTests - 2019.07.17 at 21h 18m 56s.xml">
-      <configuration name="ContactDeletionTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="ContactCreationTests - 2019.07.17 at 21h 19m 15s.xml">
       <configuration name="ContactCreationTests" configurationId="TestNG" />
     </history-entry>
@@ -418,6 +370,27 @@
     </history-entry>
     <history-entry file="ContactModificationTests - 2019.07.17 at 21h 23m 55s.xml">
       <configuration name="ContactModificationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactModificationTests - 2019.07.17 at 21h 28m 16s.xml">
+      <configuration name="ContactModificationTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ContactDeletionTests - 2019.07.17 at 21h 28m 34s.xml">
+      <configuration name="ContactDeletionTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PrimeTests - 2019.07.18 at 20h 51m 08s.xml">
+      <configuration name="PrimeTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PrimeTests - 2019.07.18 at 20h 52m 07s.xml">
+      <configuration name="PrimeTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PrimeTests - 2019.07.18 at 22h 15m 59s.xml">
+      <configuration name="PrimeTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PrimeTests - 2019.07.18 at 22h 21m 41s.xml">
+      <configuration name="PrimeTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PrimeTests - 2019.07.18 at 22h 23m 53s.xml">
+      <configuration name="PrimeTests" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -431,6 +404,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49850747" visible="true" weight="0.25579977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -450,7 +424,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.501221" side_tool="true" weight="0.3297619" />
       <window_info anchor="bottom" id="Build" order="10" sideWeight="0.498779" weight="0.3297619" />
-      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3291536" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -752,6 +726,27 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/PrimeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/Primes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
         </state>
       </provider>
     </entry>
