@@ -93,8 +93,7 @@ public class ContactHelper extends HelperBase {
             String first_name = element.findElement(By.cssSelector("td:nth-child(3)")).getText();
             String last_name = element.findElement(By.cssSelector("td:nth-child(2)")).getText();
             int id = Integer.parseInt(element.findElement(By.xpath("//input[@type='checkbox' and @name='selected[]']")).getAttribute("id"));
-            ContactData contact = new ContactData(id, first_name, last_name, null, null, null);
-            contacts.add(contact);
+            contacts.add(new ContactData().withId(id).withFirstName(first_name).withLastName(last_name));
         }
         return contacts;
     }
