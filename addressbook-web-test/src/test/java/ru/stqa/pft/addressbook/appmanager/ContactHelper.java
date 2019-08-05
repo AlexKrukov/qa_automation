@@ -8,7 +8,9 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -42,8 +44,8 @@ public class ContactHelper extends HelperBase {
         click(By.linkText("add new"));
     }
 
-    public void selectContact(int index) {
-        wd.findElements(By.name("selected[]")).get(index).click();
+    public void selectContactById(int id) {
+        wd.findElement(By.cssSelector("input[value = '" + id +"']")).click();
     }
 
     public void deleteContact() {
@@ -73,8 +75,8 @@ public class ContactHelper extends HelperBase {
         returnToHomePage();
     }
 
-    public void delete(int index) {
-        selectContact(index);
+    public void delete(ContactData contact) {
+        selectContactById(contact.getId());
         deleteContact();
     }
 
@@ -88,6 +90,18 @@ public class ContactHelper extends HelperBase {
 
     public List<ContactData> list() {
         List<ContactData> contacts = new ArrayList<>();
+        List<WebElement> elements = wd.findElements(By.cssSelector("[name = entry]"));
+        for (WebElement element : elements) {
+            String first_name = element.findElement(By.cssSelector("td:nth-child(3)")).getText();
+            String last_name = element.findElement(By.cssSelector("td:nth-child(2)")).getText();
+            int id = Integer.parseInt(element.findElement(By.xpath("//input[@type='checkbox' and @name='selected[]']")).getAttribute("id"));
+            contacts.add(new ContactData().withId(id).withFirstName(first_name).withLastName(last_name));
+        }
+        return contacts;
+    }
+
+    public Set<ContactData> all() {
+        Set<ContactData> contacts = new HashSet<ContactData>();
         List<WebElement> elements = wd.findElements(By.cssSelector("[name = entry]"));
         for (WebElement element : elements) {
             String first_name = element.findElement(By.cssSelector("td:nth-child(3)")).getText();
