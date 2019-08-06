@@ -8,10 +8,7 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -66,6 +63,7 @@ public class ContactHelper extends HelperBase {
         initContactCreation();
         fillContactForm(contact, a);
         enterNewContact();
+        contactCache = null;
         returnToHomePage();
     }
 
@@ -73,12 +71,14 @@ public class ContactHelper extends HelperBase {
         initContactModification();
         fillContactForm(contact, false);
         updateContact();
+        contactCache = null;
         returnToHomePage();
     }
 
     public void delete(ContactData contact) {
         selectContactById(contact.getId());
         deleteContact();
+        contactCache = null;
     }
 
     public boolean isThereAContact() {
@@ -89,27 +89,20 @@ public class ContactHelper extends HelperBase {
         return wd.findElements(By.name("selected[]")).size();
     }
 
-    public List<ContactData> list() {
-        List<ContactData> contacts = new ArrayList<>();
-        List<WebElement> elements = wd.findElements(By.cssSelector("[name = entry]"));
-        for (WebElement element : elements) {
-            String first_name = element.findElement(By.cssSelector("td:nth-child(3)")).getText();
-            String last_name = element.findElement(By.cssSelector("td:nth-child(2)")).getText();
-            int id = Integer.parseInt(element.findElement(By.xpath("//input[@type='checkbox' and @name='selected[]']")).getAttribute("id"));
-            contacts.add(new ContactData().withId(id).withFirstName(first_name).withLastName(last_name));
-        }
-        return contacts;
-    }
+    private Contacts contactCache = null;
 
     public Contacts all() {
-        Contacts contacts = new Contacts();
+        if (contactCache != null) {
+            return new Contacts(contactCache);
+        }
+        contactCache = new Contacts();
         List<WebElement> elements = wd.findElements(By.cssSelector("[name = entry]"));
         for (WebElement element : elements) {
             String first_name = element.findElement(By.cssSelector("td:nth-child(3)")).getText();
             String last_name = element.findElement(By.cssSelector("td:nth-child(2)")).getText();
             int id = Integer.parseInt(element.findElement(By.xpath("//input[@type='checkbox' and @name='selected[]']")).getAttribute("id"));
-            contacts.add(new ContactData().withId(id).withFirstName(first_name).withLastName(last_name));
+            contactCache.add(new ContactData().withId(id).withFirstName(first_name).withLastName(last_name));
         }
-        return contacts;
+        return new Contacts(contactCache);
     }
 }
