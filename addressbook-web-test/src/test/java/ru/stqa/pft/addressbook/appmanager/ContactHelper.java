@@ -8,9 +8,7 @@ import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 public class ContactHelper extends HelperBase {
 
@@ -103,9 +101,9 @@ public class ContactHelper extends HelperBase {
             String first_name = element.findElement(By.cssSelector("td:nth-child(3)")).getText();
             String last_name = element.findElement(By.cssSelector("td:nth-child(2)")).getText();
             int id = Integer.parseInt(element.findElement(By.xpath("//input[@type='checkbox' and @name='selected[]']")).getAttribute("id"));
-            String[] phones = element.findElement(By.cssSelector("td:nth-child(6)")).getText().split("\n");
-            contactCache.add(new ContactData().withId(id).withFirstName(first_name).withLastName(last_name)
-            .withHomePhone(phones[0]).withMobilePhone(phones[1]).withWorkPhone(phones[2]));
+            //String[] phones = element.findElement(By.cssSelector("td:nth-child(6)")).getText().split("\n");
+            String allPhones = element.findElement(By.cssSelector("td:nth-child(6)")).getText();
+            contactCache.add(new ContactData().withId(id).withFirstName(first_name).withLastName(last_name).withAllPhones(allPhones));
         }
         return new Contacts(contactCache);
     }
