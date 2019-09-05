@@ -1,0 +1,20 @@
+<list>
+  <contact>
+    <firstName>John 0</firstName>
+    <lastName>Fedorov 0</lastName>
+    <homePhone>111222 0</homePhone>
+    <email1>email0</email1>
+  </contact>
+  <contact>
+    <firstName>John 1</firstName>
+    <lastName>Fedorov 1</lastName>
+    <homePhone>111222 1</homePhone>
+    <email1>email1</email1>
+  </contact>
+  <contact>
+    <firstName>John 2</firstName>
+    <lastName>Fedorov 2</lastName>
+    <homePhone>111222 2</homePhone>
+    <email1>email2</email1>
+  </contact>
+</list>

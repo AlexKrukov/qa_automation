@@ -1,0 +1,20 @@
+[
+  {
+    "firstName": "John 0",
+    "lastName": "Fedorov 0",
+    "homePhone": "111222 0",
+    "email1": "email0"
+  },
+  {
+    "firstName": "John 1",
+    "lastName": "Fedorov 1",
+    "homePhone": "111222 1",
+    "email1": "email1"
+  },
+  {
+    "firstName": "John 2",
+    "lastName": "Fedorov 2",
+    "homePhone": "111222 2",
+    "email1": "email2"
+  }
+]
