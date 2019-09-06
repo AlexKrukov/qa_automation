@@ -97,8 +97,11 @@ public class ContactHelper extends HelperBase {
             return new Contacts(contactCache);
         }
         contactCache = new Contacts();
-        List<WebElement> elements = wd.findElements(By.cssSelector("[name = entry]"));
+        //List<WebElement> elements = wd.findElements(By.cssSelector("[name = entry]"));
+        List<WebElement> elements = wd.findElements(By.name("entry"));
         for (WebElement element : elements) {
+            List<WebElement> cells = element.findElements(By.tagName("td"));
+            /*
             String first_name = element.findElement(By.cssSelector("td:nth-child(3)")).getText();
             String last_name = element.findElement(By.cssSelector("td:nth-child(2)")).getText();
             int id = Integer.parseInt(element.findElement(By.xpath("//input[@type='checkbox' and @name='selected[]']")).getAttribute("id"));
@@ -106,8 +109,15 @@ public class ContactHelper extends HelperBase {
             String allPhones = element.findElement(By.cssSelector("td:nth-child(6)")).getText();
             String address = element.findElement(By.cssSelector("td:nth-child(4)")).getText();
             String allEmails = element.findElement(By.cssSelector("td:nth-child(5)")).getText();
+            */
+            //int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("id"));
+            String last_name = cells.get(1).getText();
+            String first_name = cells.get(2).getText();
+            String address = cells.get(3).getText();
+            String allEmails = cells.get(4).getText();
+            String allPhones = cells.get(5).getText();
             contactCache.add(new ContactData()
-                    .withId(id)
+                    //.withId(id)
                     .withFirstName(first_name)
                     .withLastName(last_name)
                     .withAddress(address)
